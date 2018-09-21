@@ -1,0 +1,24 @@
+zuul:
+  max:
+    host:
+      connections: 2000
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+  routes:
+    ddeapi:
+      sensitive-headers:
+      path: /ddeapi/**
+      serviceId: ddeapp
+    assetsapi:
+      sensitive-headers:
+      path: /assetsapp/**
+      serviceId: assetsapp
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  eureka:
+    enabled: true
