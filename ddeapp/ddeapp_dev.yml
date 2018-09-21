@@ -1,27 +1,26 @@
 spring:
   profiles:
-    active: prod
-
+    active: dev
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
     driver-class-name: com.mysql.jdbc.Driver
     platform: mysql
-    url: jdbc:mysql://172.16.63.190:3306/ding_isv_corp?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/ding_isv_corp?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: rylai
     password: rylai
-#  redis:
-#    host: localhost
-#    port: 6379
-#    password: redispwd
-#    lettuce:
-#      pool:
-#        max-idle: 100
-#        min-idle: 1
-#        max-active: 1000
-#        max-wait: -1ms
-#    timeout: 1000ms
-
+  redis:
+    host: localhost
+    port: 6379
+    password: redispwd
+    lettuce:
+      pool:
+        max-idle: 100
+        min-idle: 1
+        max-active: 1000
+        max-wait: -1ms
+    timeout: 1000ms
+    
 mybatis:
   #配置mapper文件所在地，在 resources 目录下的mapper目录的*xml文件
   mapper-locations: classpath:mybatis/*.xml
@@ -29,4 +28,5 @@ mybatis:
 info:
     app:
       version: 0.0.1
-      name: ddeapp-Prod
+      name: ddeapp-Dev
+
