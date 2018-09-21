@@ -8,8 +8,8 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     platform: mysql
     url: jdbc:mysql://localhost:3306/ding_isv_corp?useSSL=false&useUnicode=true&characterEncoding=UTF-8
-    username: rylai
-    password: rylai
+    username: root
+    password: 123456
   redis:
     host: localhost
     port: 6379
@@ -29,4 +29,4 @@ mybatis:
 info:
     app:
       version: 0.0.1
-      name: ddeapp-Prod
+      name: ddeapp-prod
