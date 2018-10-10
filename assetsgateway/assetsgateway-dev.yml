@@ -1,7 +1,6 @@
 spring:
   profiles:
-    active: prod
-
+    active: dev
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
@@ -21,7 +20,7 @@ spring:
         max-active: 1000
         max-wait: -1ms
     timeout: 1000ms
-
+    
 mybatis:
   #配置mapper文件所在地，在 resources 目录下的mapper目录的*xml文件
   mapper-locations: classpath:mybatis/*.xml
@@ -29,4 +28,5 @@ mybatis:
 info:
     app:
       version: 0.0.1
-      name: ddeapp-prod
+      name: assetsgateway-dev
+
