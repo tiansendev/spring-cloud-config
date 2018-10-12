@@ -20,5 +20,5 @@ spring:
 info:
     app:
       version: 0.0.1
-      name: reidsapp-Dev
+      name: cache-server-Dev
 
