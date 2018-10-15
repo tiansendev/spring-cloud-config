@@ -1,16 +1,8 @@
 spring:
   profiles:
     active: prod
-#   datasource:
-#      type: com.alibaba.druid.pool.DruidDataSource
-#      driverClassName: com.mysql.jdbc.Driver
-#      driver-class-name: com.mysql.jdbc.Driver
-#      platform: mysql
-#      url: jdbc:mysql://localhost:3306/corp0001?useSSL=false&useUnicode=true&characterEncoding=UTF-8
-#      username: root
-#      password: 123456
   redis:
-    host: localhost
+    host: 172.16.63.190
     port: 6379
     password: redispwd
     lettuce:

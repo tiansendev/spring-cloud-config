@@ -2,7 +2,7 @@ spring:
   profiles:
     active: dev
   redis:
-    host: localhost
+    host: 172.16.63.190
     port: 6379
     password: redispwd
     lettuce:
